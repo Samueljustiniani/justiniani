@@ -5,15 +5,14 @@ const PORT = 3000;
 const ip = '3.218.160.181'; // IP de tu entorno en AWS
 
 // Servir archivos estáticos desde la carpeta 'public'
-app.use(express.static('public'));
+app.use(express.static('public')); // Esto sirve los archivos estáticos de 'public'
 
-// Manejar la ruta raíz
+// Manejar la ruta raíz y enviar 'index.html' desde la raíz del proyecto (fuera de 'public')
 app.get('/', (req, res) => {
-    // Corregimos la ruta para enviar 'index.html' desde 'public/pages'
-    res.sendFile(path.join(__dirname, 'public/pages', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html')); // Ruta corregida para que apunte a la raíz
 });
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Server en http://${ip}:${PORT}`); // Manteniendo tu IP
+    console.log(`Server en http://${ip}:${PORT}`);
 });
