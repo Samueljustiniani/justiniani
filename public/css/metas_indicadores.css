@@ -1,0 +1,277 @@
+/* Estilos Base */
+body {
+    font-family: mixed;
+    margin: 0;
+    padding: 0;
+    background-color: #D7B69E;
+}
+
+/* Header */
+.header {
+    background-color: #AC1414;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.search-and-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.account-actions .btn {
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* Navegación Principal */
+.main-nav {
+    background-color: #AC1414;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Sección de ODS */
+.ods-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ods-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ods-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ods-container {
+    display: flex;
+    align-items: center;
+    background-color: #b71c1c;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ods-icon {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.ods-text {
+    flex-grow: 1;
+    text-align: left;
+    color: #000; /* Cambia el color del texto a negro */
+}
+
+.ods-text h1, .ods-text p {
+    margin: 0;
+}
+
+/* Estilos adicionales para áreas específicas */
+.container {
+    display: flex;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 60%;
+    padding-right: 40px;
+}
+
+.right-section {
+    width: 40%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right-section h3 {
+    margin-top: 0;
+}
+
+.goals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.goal-box {
+    background-color: #b71c1c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.meta, .indicators {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.meta p, .indicators p {
+    margin: 0;
+}
+
+
+
+/* Sección de subtítulo */
+.subtitle-section {
+    text-align: center;
+    margin: 40px 0; /* Espaciado arriba y abajo */
+}
+
+.subtitle-line {
+    width: 100%;
+    height: 80px; /* Grosor de la línea */
+    background-color: #b71c1c; /* Color rojo */
+    position: relative; /* Para posicionar el texto dentro */
+    margin: 20px; /* Espaciado alrededor de la línea */
+}
+
+.subtitle-text {
+    position: absolute; /* Posicionar el texto dentro de la línea */
+    top: -15px; /* Ajusta este valor para mover el texto arriba o abajo */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar el desplazamiento al centro */
+    font-size: 24px; /* Tamaño de fuente del subtítulo */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    background-color: #b71c1c; /* Fondo igual al de la línea para cubrir el color */
+    padding:  10px; /* Espaciado lateral para el texto */
+}
+
+
+/* Estilo para la sección de imágenes */
+.images-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.images-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme entre imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en pantallas pequeñas */
+}
+
+.image-item {
+    width: 22%; /* Ajusta este porcentaje según necesites */
+    margin-bottom: 20px; /* Espaciado inferior entre filas de imágenes */
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.image-subtitle {
+    margin-top: 10px; /* Espaciado superior entre imagen y subtítulo */
+    font-size: 18px; /* Tamaño de fuente para el subtítulo */
+    color: #b71c1c; /* Color del texto del subtítulo */
+}
+
+.image-description {
+    margin-top: 5px; /* Espaciado superior entre subtítulo y descripción */
+    font-size: 16px; /* Tamaño de fuente para la descripción */
+    color: #333; /* Color del texto de la descripción */
+}
+
+
+/* Sección de Noticias */
+.news-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-item {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta el ancho al 33% para tener 3 columnas */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-item h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+
