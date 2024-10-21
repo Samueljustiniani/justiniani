@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path')
 const PORT = 3000;
-const ip = '100.28.67.181'
+const ip = '3.218.160.181'
 
 
 app.use(express.static('public'))
